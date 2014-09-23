@@ -1,6 +1,8 @@
 package com.techern.dlang.util;
 
+import com.intellij.icons.AllIcons;
 import com.intellij.openapi.util.IconLoader;
+import com.intellij.util.IconUtil;
 
 import javax.swing.*;
 
@@ -16,6 +18,6 @@ public class DLanguageIcons {
      *
      * @since 0.0.1
      */
-    public static final Icon BLANK_ICON = IconLoader.getIcon("com/techern/dlang/icons/blankCircle.png");
+    public static final Icon CLASS_ICON = AllIcons.Nodes.Class;
 
 }
