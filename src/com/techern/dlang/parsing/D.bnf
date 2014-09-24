@@ -13,3 +13,15 @@
     tokenTypeClass="com.techern.dlang.parsing.DTokenType"
 }
 
+pLeftCurly ::= "{"
+pRightCurly ::= "}"
+
+pLeftSquare ::= "["
+pRightSquare ::= "]"
+
+pLeft ::= "("
+pRight ::= ")"
+
+pAnyLeft ::= pLeftCurly | pLeftSquare | pLeft
+pAnyRight ::= pRightCurly | pRightSquare | pRight
+pAny ::= pAnyLeft | pAnyRight //If you use this, you are weird.
