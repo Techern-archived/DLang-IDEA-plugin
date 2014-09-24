@@ -1,0 +1,15 @@
+{
+    parserClass="com.techern.dlang.parsing.DParser"
+
+    extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+    psiClassPrefix="D"
+    psiImplClassSuffix="Impl"
+    psiPackage="com.techern.dlang.parsing"
+    psiImplPackage="com.techern.dlang.parsing.impl"
+
+    elementTypeHolderClass="com.techern.dlang.parsing.DTypes"
+    elementTypeClass="com.techern.dlang.parsing.DElementType"
+    tokenTypeClass="com.techern.dlang.parsing.DTokenType"
+}
+
