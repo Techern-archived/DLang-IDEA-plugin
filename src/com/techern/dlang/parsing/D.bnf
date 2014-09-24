@@ -12,7 +12,7 @@
     elementTypeClass="com.techern.dlang.parsing.DElementType"
     tokenTypeClass="com.techern.dlang.parsing.DTokenType"
 }
-
+//First, do the different braces / brackets
 pLeftCurly ::= "{"
 pRightCurly ::= "}"
 
@@ -25,3 +25,26 @@ pRight ::= ")"
 pAnyLeft ::= pLeftCurly | pLeftSquare | pLeft
 pAnyRight ::= pRightCurly | pRightSquare | pRight
 pAny ::= pAnyLeft | pAnyRight //If you use this, you are weird.
+
+//Now start work on operations
+<colon> ::= ":" //Hey, I'm in your large intestine!
+<semicolon> ::= ";"
+<comma> ::= "," //Okay, this is getting boring
+<dot> ::= "." //No, it's a dead pixel
+
+oPlus ::= "+"
+oMinus ::= "-"
+oDivide ::= "/"
+oMultiply ::= "*"
+
+oBasicOperation ::= oPlus | oMinus | oDivide | oMultiply
+
+opEqualTo ::= "=="
+opAssign ::= "=" //Sir, yes sir!
+<not> ::= "!"
+opNotEqualTo ::= "!="
+
+oComplement ::= "~" //You're beautiful
+opComplementSelf ::= "~="
+oIncrement ::= "++"
+oDecrement ::= "--"
