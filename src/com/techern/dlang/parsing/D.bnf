@@ -12,6 +12,18 @@
     elementTypeClass="com.techern.dlang.parsing.DElementType"
     tokenTypeClass="com.techern.dlang.parsing.DTokenType"
 }
+
+<letterLowercase> ::= a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z
+<letterUppercase> ::= A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z
+
+<underscore> ::= "_"
+<colon> ::= ":" //Hey, I'm in your large intestine!
+<semicolon> ::= ";"
+<comma> ::= "," //Okay, this is getting boring
+<dot> ::= "." //No, it's a dead pixel
+
+<letter> ::= <letterLowercase> | <letterUppercase>
+
 //First, do the different braces / brackets
 pLeftCurly ::= "{"
 pRightCurly ::= "}"
@@ -27,11 +39,6 @@ pAnyRight ::= pRightCurly | pRightSquare | pRight
 pAny ::= pAnyLeft | pAnyRight //If you use this, you are weird.
 
 //Now start work on operations
-<colon> ::= ":" //Hey, I'm in your large intestine!
-<semicolon> ::= ";"
-<comma> ::= "," //Okay, this is getting boring
-<dot> ::= "." //No, it's a dead pixel
-
 oPlus ::= "+"
 oMinus ::= "-"
 oDivide ::= "/"
