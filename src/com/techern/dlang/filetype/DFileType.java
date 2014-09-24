@@ -1,6 +1,7 @@
-package com.techern.dlang;
+package com.techern.dlang.filetype;
 
 import com.intellij.openapi.fileTypes.LanguageFileType;
+import com.techern.dlang.DLanguage;
 import com.techern.dlang.util.DLanguageIcons;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -15,14 +16,14 @@ import javax.swing.*;
 public class DFileType extends LanguageFileType {
 
     /**
-     * The instance of {@link com.techern.dlang.DFileType}
+     * The instance of {@link DFileType}
      *
      * @since 0.0.1
      */
     public static final DFileType INSTANCE = new DFileType();
 
     /**
-     * Privately constructs a new {@link com.techern.dlang.DFileType}
+     * Privately constructs a new {@link DFileType}
      *
      * @since 0.0.1
      */
@@ -31,7 +32,7 @@ public class DFileType extends LanguageFileType {
     }
 
     /**
-     * Gets the name of this {@link com.techern.dlang.DFileType}
+     * Gets the name of this {@link DFileType}
      *
      * @return The name
      * @since 0.0.1
@@ -43,7 +44,7 @@ public class DFileType extends LanguageFileType {
     }
 
     /**
-     * Gets the description of this {@link com.techern.dlang.DFileType}
+     * Gets the description of this {@link DFileType}
      *
      * @return The description
      * @since 0.0.1

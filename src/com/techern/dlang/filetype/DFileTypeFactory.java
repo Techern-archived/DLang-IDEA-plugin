@@ -1,4 +1,4 @@
-package com.techern.dlang;
+package com.techern.dlang.filetype;
 
 import com.intellij.openapi.fileTypes.FileTypeConsumer;
 import com.intellij.openapi.fileTypes.FileTypeFactory;
